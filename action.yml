@@ -14,5 +14,9 @@ runs:
       shell: bash
       run: pip install -r requirements.txt
     - name: Run
+      env:
+        PSN_NPSSO: ${{ secrets.PSN_NPSSO }}
+        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+        GIST_ID: ${{ secrets.GIST_ID }}
       shell: bash
       run: python src/main.py
