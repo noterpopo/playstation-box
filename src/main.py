@@ -13,6 +13,7 @@ github_token = os.environ.get('GH_TOKEN')
 github_repo = os.environ.get('GITHUB_REPOSITORY')
 gist_id = os.environ.get('GIST_ID')
 
+print(npsso)
 
 if __name__ == '__main__':
     psn_client = PSN(npsso=npsso, access_token=psn_access_token, refresh_token=psn_refresh_token)
